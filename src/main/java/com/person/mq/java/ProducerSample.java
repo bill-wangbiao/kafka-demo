@@ -22,7 +22,7 @@ public class ProducerSample {
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
-        String topic = "test-topic";
+        String topic = "log4j-topic";
         Producer<String, String> producer = new KafkaProducer<String, String>(props);
         producer.send(new ProducerRecord(topic, "idea-key2", "java-message 1"));
         producer.send(new ProducerRecord(topic, "idea-key2", "java-message 2"));

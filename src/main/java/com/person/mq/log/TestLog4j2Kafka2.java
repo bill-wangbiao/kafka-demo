@@ -17,7 +17,7 @@ public class TestLog4j2Kafka2 {
 
         for (int i = 0; i <= 5; i++) {
 
-            logger.info("这是从 TestLog4j2Kafka 2 产生的消息 【" + i + "】 ..  ");
+            logger.info("this is a message produced from TestLog4j2Kafka 2 [" + i + "]......");
 
             Thread.sleep(1000);
         }

@@ -1,11 +1,11 @@
 package com.person.mq.seckkill.Listener;
 
 import com.alibaba.fastjson.JSONObject;
+import com.person.mq.seckkill.config.Constants;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;
-import org.study.mq.kafka.secondKill.config.Constants;
 
 public class SecondKillListener {
 

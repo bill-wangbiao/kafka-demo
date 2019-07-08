@@ -1,10 +1,10 @@
 package com.person.mq.report.Listener;
 
+import com.person.mq.report.config.Constants;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;
-import org.study.mq.kafka.report.config.Constants;
 
 public class ReportDataListener {
 

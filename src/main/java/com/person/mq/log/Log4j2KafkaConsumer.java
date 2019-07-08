@@ -1,4 +1,4 @@
-package com.person.mq.java;
+package com.person.mq.log;
 
 import org.apache.kafka.clients.consumer.Consumer;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -12,17 +12,16 @@ import java.util.Properties;
  * @author : wangbiao
  * @version V1.0
  * @Project: kafka-demo
- * @Package com.person.mq.java
+ * @Package com.person.mq.log
  * @Description: TODO
- * @date Date : 2019年07月03日 20:52
+ * @date Date : 2019年07月03日 21:07
  */
-public class ConsumerSample {
+public class Log4j2KafkaConsumer {
     public static void main(String[] args) {
         String topic = "log4j-topic";
-
         Properties props = new Properties();
         props.put("bootstrap.servers", "localhost:9092");
-        props.put("group.id", "testGroup1");
+        props.put("group.id", "testLog4j2KafkaGroup");
         props.put("enable.auto.commit", "true");
         props.put("auto.commit.interval.ms", "1000");
         props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");

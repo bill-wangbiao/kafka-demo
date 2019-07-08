@@ -1,11 +1,11 @@
 package com.person.mq.seckkill.service;
 
 import com.alibaba.fastjson.JSONObject;
+import com.person.mq.seckkill.config.Constants;
+import com.person.mq.seckkill.redis.RedisOperate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
-import org.study.mq.kafka.secondKill.config.Constants;
-import org.study.mq.kafka.secondKill.redis.RedisOperate;
 
 @Service
 public class SecondKillService {

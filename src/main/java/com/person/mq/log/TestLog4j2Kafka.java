@@ -16,7 +16,7 @@ public class TestLog4j2Kafka {
     public static void main(String[] args) throws InterruptedException {
         for (int i = 0; i <= 5; i++) {
 
-            logger.info("这是从 TestLog4j2Kafka 产生的消息 【" + i + "】 ..  ");
+            logger.info("this is TestLog4j2Kafka produce message[" + i + "]....");
 
             Thread.sleep(1000);
         }
